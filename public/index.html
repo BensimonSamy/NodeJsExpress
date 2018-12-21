@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Web Sockets</title>
+</head>
+<body>
+    <div id="mario-chat">
+        <div id ="chat-window">
+            <div id="chatroom"></div>
+            <div id="feedback"></div>
+        </div>
+        <input type="text" id="username" placeholder="username">
+        <input type="text" id="message" placeholder="message">
+        <button id="send">Send</button>
+    </div>
+         <script src="/chat.js"></script>
+         <script>
+            $("#send").on('click', function(){
+                $('#message').val("");
+            })
+        </script>
+</body>
+</html>
